@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\A01\QuickSort\bin\Debug\QuickSort.exe.config
+E:\School\Fall 2020\CS3280\CS3280\A01\QuickSort\bin\Debug\QuickSort.exe
+E:\School\Fall 2020\CS3280\CS3280\A01\QuickSort\bin\Debug\QuickSort.pdb
+E:\School\Fall 2020\CS3280\CS3280\A01\QuickSort\obj\Debug\QuickSort.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\A01\QuickSort\obj\Debug\QuickSort.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\A01\QuickSort\obj\Debug\QuickSort.exe
+E:\School\Fall 2020\CS3280\CS3280\A01\QuickSort\obj\Debug\QuickSort.pdb
