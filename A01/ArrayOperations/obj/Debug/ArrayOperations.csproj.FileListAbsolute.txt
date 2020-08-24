@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\A01\ArrayOperations\bin\Debug\ArrayOperations.exe.config
+E:\School\Fall 2020\CS3280\CS3280\A01\ArrayOperations\bin\Debug\ArrayOperations.exe
+E:\School\Fall 2020\CS3280\CS3280\A01\ArrayOperations\bin\Debug\ArrayOperations.pdb
+E:\School\Fall 2020\CS3280\CS3280\A01\ArrayOperations\obj\Debug\ArrayOperations.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\A01\ArrayOperations\obj\Debug\ArrayOperations.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\A01\ArrayOperations\obj\Debug\ArrayOperations.exe
+E:\School\Fall 2020\CS3280\CS3280\A01\ArrayOperations\obj\Debug\ArrayOperations.pdb
