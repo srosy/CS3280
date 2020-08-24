@@ -1,0 +1,10 @@
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\obj\Debug\Calculator.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\obj\Debug\Calculator.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+E:\School\Fall 2020\CS3280\Calculator\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
