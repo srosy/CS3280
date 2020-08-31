@@ -52,6 +52,8 @@ namespace ControlStructure
             //Console.WriteLine($"Maximum of three numbers: {maxNumber}");
 
             // Iterating binary search
+
+            /*
             Console.WriteLine("*** Starting iterating binary search:");
             Console.WriteLine("Enter the number of elements in the array: ");
             string strNumElements = Console.ReadLine();
@@ -99,6 +101,15 @@ namespace ControlStructure
 
             int indexForBinaryRecSearch = search.BinarySearchRecursive(intRecBinarySearchArray, keyForBinarySearch, 0, intRecBinarySearchArray.Length - 1);
             Console.WriteLine("Index of Binary Search Recursive is: " + indexForBinaryRecSearch);
+
+            Console.ReadLine();
+            */
+
+            // Switch case and enumeration
+            Console.WriteLine("Beginning Case-Switch and Enumeration");
+            DaysOfWeek3280 day = DaysOfWeek3280.MONDAY;
+            ClassSchedule classSchedule = new ClassSchedule();
+            classSchedule.WhatAreYouDoingToday(day);
 
             Console.ReadLine();
         }

@@ -1,0 +1,10 @@
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\bin\Debug\DLLDemo.exe.config
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\bin\Debug\DLLDemo.exe
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\bin\Debug\DLLDemo.pdb
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\obj\Debug\DLLDemo.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\obj\Debug\DLLDemo.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\obj\Debug\DLLDemo.exe
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\obj\Debug\DLLDemo.pdb
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\bin\Debug\MathLibrary.dll
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\bin\Debug\MathLibrary.pdb
+E:\School\Fall 2020\CS3280\CS3280\DLLDemo\obj\Debug\DLLDemo.csproj.CopyComplete

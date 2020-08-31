@@ -20,12 +20,15 @@ namespace WindowsFormsApp1
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            MathLibrary.Math math = new MathLibrary.Math();
+
             lblAnswer.ForeColor = Color.Green;
             if (txtNum1.Text.Replace(".", "").All(char.IsDigit) &&
                 txtNum2.Text.Replace(".", "").All(char.IsDigit) &&
                 !string.IsNullOrEmpty(txtNum1.Text) &&
                 !string.IsNullOrEmpty(txtNum2.Text))// only accept numerical values
-                lblAnswer.Text = (float.Parse(txtNum1.Text) + float.Parse(txtNum2.Text)).ToString();
+
+                lblAnswer.Text = math.Add(int.Parse(txtNum1.Text), int.Parse(txtNum2.Text)).ToString(); //(float.Parse(txtNum1.Text) + float.Parse(txtNum2.Text)).ToString();
             else
             {
                 lblAnswer.Text = "Failed to calculate.";

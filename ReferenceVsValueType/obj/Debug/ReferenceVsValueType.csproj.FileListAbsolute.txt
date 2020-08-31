@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\ReferenceVsValueType\bin\Debug\ReferenceVsValueType.exe.config
+E:\School\Fall 2020\CS3280\CS3280\ReferenceVsValueType\bin\Debug\ReferenceVsValueType.exe
+E:\School\Fall 2020\CS3280\CS3280\ReferenceVsValueType\bin\Debug\ReferenceVsValueType.pdb
+E:\School\Fall 2020\CS3280\CS3280\ReferenceVsValueType\obj\Debug\ReferenceVsValueType.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\ReferenceVsValueType\obj\Debug\ReferenceVsValueType.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\ReferenceVsValueType\obj\Debug\ReferenceVsValueType.exe
+E:\School\Fall 2020\CS3280\CS3280\ReferenceVsValueType\obj\Debug\ReferenceVsValueType.pdb

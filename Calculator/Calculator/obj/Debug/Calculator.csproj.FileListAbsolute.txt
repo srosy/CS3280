@@ -18,3 +18,5 @@ E:\School\Fall 2020\CS3280\CS3280\Calculator\Calculator\obj\Debug\Calculator.csp
 E:\School\Fall 2020\CS3280\CS3280\Calculator\Calculator\obj\Debug\WindowsFormsApp1.exe
 E:\School\Fall 2020\CS3280\CS3280\Calculator\Calculator\obj\Debug\WindowsFormsApp1.pdb
 E:\School\Fall 2020\CS3280\CS3280\Calculator\Calculator\obj\Debug\WindowsFormsApp1.SimpleCalculator.resources
+E:\School\Fall 2020\CS3280\CS3280\Calculator\Calculator\bin\Debug\MathLibrary.dll
+E:\School\Fall 2020\CS3280\CS3280\Calculator\Calculator\obj\Debug\Calculator.csproj.CopyComplete

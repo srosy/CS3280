@@ -1,0 +1,6 @@
+E:\School\Fall 2020\CS3280\CS3280\AboutMyself\bin\Debug\AboutMyself.dll
+E:\School\Fall 2020\CS3280\CS3280\AboutMyself\bin\Debug\AboutMyself.pdb
+E:\School\Fall 2020\CS3280\CS3280\AboutMyself\obj\Debug\AboutMyself.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\AboutMyself\obj\Debug\AboutMyself.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\AboutMyself\obj\Debug\AboutMyself.dll
+E:\School\Fall 2020\CS3280\CS3280\AboutMyself\obj\Debug\AboutMyself.pdb

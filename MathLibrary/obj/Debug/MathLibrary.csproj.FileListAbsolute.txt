@@ -1,0 +1,6 @@
+E:\School\Fall 2020\CS3280\CS3280\MathLibrary\bin\Debug\MathLibrary.dll
+E:\School\Fall 2020\CS3280\CS3280\MathLibrary\bin\Debug\MathLibrary.pdb
+E:\School\Fall 2020\CS3280\CS3280\MathLibrary\obj\Debug\MathLibrary.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\MathLibrary\obj\Debug\MathLibrary.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\MathLibrary\obj\Debug\MathLibrary.dll
+E:\School\Fall 2020\CS3280\CS3280\MathLibrary\obj\Debug\MathLibrary.pdb
