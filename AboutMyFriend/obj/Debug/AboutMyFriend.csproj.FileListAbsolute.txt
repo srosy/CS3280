@@ -1,0 +1,9 @@
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\bin\Debug\AboutMyFriend.exe.config
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\bin\Debug\AboutMyFriend.exe
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\bin\Debug\AboutMyFriend.pdb
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\bin\Debug\AboutMyself.dll
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\obj\Debug\AboutMyFriend.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\obj\Debug\AboutMyFriend.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\obj\Debug\AboutMyFriend.csproj.CopyComplete
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\obj\Debug\AboutMyFriend.exe
+E:\School\Fall 2020\CS3280\CS3280\AboutMyFriend\obj\Debug\AboutMyFriend.pdb

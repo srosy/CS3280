@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\SimpleLibrarySystem\bin\Debug\SimpleLibrarySystem.exe.config
+E:\School\Fall 2020\CS3280\CS3280\SimpleLibrarySystem\bin\Debug\SimpleLibrarySystem.exe
+E:\School\Fall 2020\CS3280\CS3280\SimpleLibrarySystem\bin\Debug\SimpleLibrarySystem.pdb
+E:\School\Fall 2020\CS3280\CS3280\SimpleLibrarySystem\obj\Debug\SimpleLibrarySystem.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\SimpleLibrarySystem\obj\Debug\SimpleLibrarySystem.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\SimpleLibrarySystem\obj\Debug\SimpleLibrarySystem.exe
+E:\School\Fall 2020\CS3280\CS3280\SimpleLibrarySystem\obj\Debug\SimpleLibrarySystem.pdb
