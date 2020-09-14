@@ -1,0 +1,10 @@
+G:\My Drive\teaching\3280\InClassDemo\Unit4\Preperties\Preperties\bin\Debug\Preperties.exe.config
+G:\My Drive\teaching\3280\InClassDemo\Unit4\Preperties\Preperties\bin\Debug\Preperties.exe
+G:\My Drive\teaching\3280\InClassDemo\Unit4\Preperties\Preperties\bin\Debug\Preperties.pdb
+G:\My Drive\teaching\3280\InClassDemo\Unit4\Preperties\Preperties\obj\Debug\Preperties.exe
+G:\My Drive\teaching\3280\InClassDemo\Unit4\Preperties\Preperties\obj\Debug\Preperties.pdb
+G:\My Drive\teaching\3280\InClassDemo\Unit4\Preperties\Preperties\obj\Debug\Preperties.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Preperties.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Preperties.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Preperties.exe
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Preperties.pdb

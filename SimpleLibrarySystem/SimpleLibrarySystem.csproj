@@ -47,7 +47,9 @@
     <Compile Include="BookLocation.cs" />
     <Compile Include="BookType.cs" />
     <Compile Include="Catalog.cs" />
+    <Compile Include="Instructor.cs" />
     <Compile Include="Librarian.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SimpleLibrarySystem
 {
@@ -14,8 +10,17 @@ namespace SimpleLibrarySystem
         public Author Author { get; set; }
         public BookType Type { get; set; }
         public BookLocation Location { get; set; }
-        public bool IsBookCheckedOut { get => W_NumberCheckedOutBy > 0; }
+        public bool IsBookCheckedOut { get => CheckoutDate > ReturnDate; }
         public int W_NumberCheckedOutBy { get; set; }
+        public DateTime CheckoutDate { get; set; }
+        public DateTime ReturnDate { get; set; }
+        public DateTime BookDueDate { get; set; }
+
+        public Book()
+        {
+            CheckoutDate = DateTime.MinValue;
+            ReturnDate = DateTime.MinValue;
+        }
     }
 
     public class Author

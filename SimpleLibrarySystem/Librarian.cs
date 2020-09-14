@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SimpleLibrarySystem
 {
-    public class Librarian
+    public class Librarian : Person
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Address { get; set; }
-        public long SSN { get; set; }
-        public int EmployeeId { get; set; }
+        protected string Address { get; set; }
+        protected int EmployeeId { get; set; }
+
+        public Librarian(string fName, string lName, long ssn, string address, int employeeId) : base(fName, lName, ssn)
+        {
+            Address = address;
+            EmployeeId = employeeId;
+        }
 
         public void AddBook(Book book, Catalog catalog)
         {

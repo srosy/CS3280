@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\bin\Debug\Preperties.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\bin\Debug\Preperties.exe
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\bin\Debug\Preperties.pdb
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Properties.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Properties.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Preperties.exe
+E:\School\Fall 2020\CS3280\CS3280\Properties\Preperties\Preperties\obj\Debug\Preperties.pdb
