@@ -16,13 +16,14 @@ namespace SimpleLibrarySystem
             EmployeeId = employeeId;
         }
 
-        public void AddItem(LibraryItem item)
+        public override void AddItem(LibraryItem item)
         {
             item.CatalogOf.Items.Add(item);
             Console.WriteLine($"SUCCESS. Added the item {item.Title} to the catalog!");
         }
 
-        public override void CheckOutItem(LibraryItem item)
+        // I'd normally keep this in Person.cs but you required it to be overridden here and abstract in the base class
+        public override void CheckOutItem(LibraryItem item) 
         {
             if (!MaxNumberItemsCheckedOut(item.CatalogOf))
             {
@@ -35,7 +36,7 @@ namespace SimpleLibrarySystem
             else
             {
                 item.CheckoutDate = DateTime.UtcNow; // assuming system is in UTC
-                item.DueDate = DateTime.UtcNow.AddDays(item.MaxCheckoutTime(Type));
+                item.DueDate = item.MaxCheckoutTime(Type);
                 Console.WriteLine($"APPROVED. {FirstName} {LastName} successfully checked out the item {item.Title}. Item is due: {item.DueDate.ToShortDateString()}.");
                 item.W_NumberCheckedOutBy = W_Number;
             }

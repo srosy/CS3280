@@ -21,7 +21,7 @@ namespace SimpleLibrarySystem
             else
             {
                 item.CheckoutDate = DateTime.UtcNow; // assuming system is in UTC
-                item.DueDate = DateTime.UtcNow.AddDays(item.MaxCheckoutTime(Type));
+                item.DueDate = item.MaxCheckoutTime(Type);
                 Console.WriteLine($"APPROVED. {FirstName} {LastName} successfully checked out the item {item.Title}. Item is due: {item.DueDate.ToShortDateString()}.");
                 item.W_NumberCheckedOutBy = W_Number;
             }

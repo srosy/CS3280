@@ -11,9 +11,12 @@ namespace SimpleLibrarySystem
         public Magazine(Catalog catalog) : base (catalog) { }
 
         public override LibraryItemType LibraryItemType { get => LibraryItemType.MAGAZINE; }
-        public override void Update()
+        public override void Update(LibraryItem itemTo)
         {
-            base.Update();
+            base.Update(itemTo);
+            var updateObj = itemTo as Magazine;
+            NumArticles = updateObj.NumArticles;
+            Advertisers = updateObj.Advertisers;
             Console.WriteLine($"Updating the magazine {Title}");
         }
     }

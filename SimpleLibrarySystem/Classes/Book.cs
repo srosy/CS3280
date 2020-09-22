@@ -4,7 +4,6 @@ namespace SimpleLibrarySystem
 {
     public class Book : LibraryItem
     {
-        public int BookId { get; set; }
         public long ISBN_Number { get; set; }
         public int Edition { get; set; }
 
@@ -12,9 +11,12 @@ namespace SimpleLibrarySystem
         public Book(Catalog catalog) : base(catalog) { }
 
         public override LibraryItemType LibraryItemType { get => LibraryItemType.BOOK; }
-        public override void Update()
+        public override void Update(LibraryItem itemTo)
         {
-            base.Update();
+            base.Update(itemTo);
+            var updateObj = itemTo as Book;
+            Edition = updateObj.Edition;
+            ISBN_Number = updateObj.ISBN_Number;
             Console.WriteLine($"Updating the book {Title} - {ISBN_Number}");
         }
     }

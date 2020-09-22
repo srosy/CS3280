@@ -10,54 +10,38 @@ namespace SimpleLibrarySystem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("*** Starting Simple Library System ***");
+            Console.WriteLine("********************** Starting Simple Library System **********************");
 
             var random = new Random();
             var catalog = SetupCatalog(random);
 
-            // create some students
-            Console.Write("\nGenerating students...");
+            // create some students using runtime polymorphism
+            Console.Write("\n *** Generating students ***");
             Person p1 = new Student("Spencer", "Rosenvall", random.Next(11111111, 99999999), random.Next(11111111, 99999999));
-            Person p2 = new Student("Gavin", "Rosenvall", random.Next(11111111, 99999999), random.Next(11111111, 99999999));
             Console.WriteLine("done.");
             p1.UserInfo();
-            p2.UserInfo();
 
-            // student 1 checks out items
-            Console.WriteLine($"\nChecking out items for {p1.FirstName} {p1.LastName} [{p1.IdString}]...");
+            // student 1 checks out items of different types
+            Console.WriteLine($"\n*** Checking out items for {p1.FirstName} {p1.LastName} [{p1.IdString}] ***");
             p1.CheckOutItems(catalog.Items.Take(4).ToList());
             p1.PrintItemInfo(catalog);
 
-            // student 2 checks out items
-            Console.WriteLine($"\nChecking out items for {p2.FirstName} {p2.LastName} [{p2.IdString}]...");
-            p1.CheckOutItems(catalog.Items.Take(catalog.Items.Count).ToList());
-            p1.PrintItemInfo(catalog);
-
-            // return all but one item for student1
-            Console.WriteLine($"\nReturning items for {p1.FirstName} {p1.LastName} [{p1.IdString}]...");
-            p1.ReturnItems(catalog.Items.Where(i => i.W_NumberCheckedOutBy == int.Parse(p1.IdString.Substring(1))).Take(2).ToList());
-
-            // student2 stole student1's item but returned it eventually
-            Console.WriteLine($"\nReturning items for {p2.FirstName} {p2.LastName} [{p2.IdString}]...");
-            p2.ReturnItems(catalog.Items.Where(i => i.W_NumberCheckedOutBy == int.Parse(p1.IdString.Substring(1))).ToList());
-
             // return all the remaining items
-            p2.ReturnItems(catalog.Items.Where(i => i.IsCheckedOut).ToList());
+            Console.WriteLine($"\n*** Return all library items ***");
+            p1.ReturnItems(catalog.Items.Where(i => i.IsCheckedOut).ToList());
 
-            // generate an instructor
-            Console.WriteLine("\nAll items are checked in.\n\nStarting Instructor Criterion...");
+            // generate an instructor using runtime polymorphism
+            Console.WriteLine("\n *** All items are checked in.\n\nStarting Instructor Criterion ***");
             Person instructor = new Instructor("Christi", "Arpit", random.Next(111111111, 999999999), random.Next(111111111, 999999999));
             instructor.UserInfo();
 
             // instructor checks-out items
-            Console.WriteLine($"\nChecking out items for {instructor.FirstName} {instructor.LastName} [{instructor.IdString}]...");
-            instructor.CheckOutItems(catalog.Items.ToList()); // try and check out all the books
+            Console.WriteLine($"\n*** Checking out items for {instructor.FirstName} {instructor.LastName} [{instructor.IdString}] ***");
+            instructor.CheckOutItems(catalog.Items.Take(6).ToList()); // try and check out all the books
             instructor.PrintItemInfo(catalog);
             instructor.ReturnItems(catalog.Items.Where(i => i.W_NumberCheckedOutBy == int.Parse(instructor.IdString.Substring(1))).ToList());
 
-            Console.WriteLine("\n*** Simple Library System Program DONE ***");
-
-            Console.WriteLine("\n*** Printing Run-time Polymorphism Requirements ***\n");
+            Console.WriteLine("\n****** Run-time Polymorphism Requirements ******\n");
 
             // instructor turns item in late and gets fee
             Console.WriteLine("\nInstructor returns book late and gets fee:");
@@ -75,14 +59,17 @@ namespace SimpleLibrarySystem
             p1.ReturnItem(magazine);
             Console.WriteLine("done.");
 
-            // take item from catalog
+            // catalog is long and hard to read, so remove some items...
+            catalog.Items = catalog.Items.Take(3).ToList();
+            
+            // system take item from catalog
             var randoItem = catalog.Items[random.Next(0, catalog.Items.Count - 1)];
             Console.WriteLine($"\nPrint items in Catalog, remove item [{randoItem.Title}], print catalog again\n");
             catalog.Items.ToList().ForEach(i =>
             {
                 PrintProperties(i);
             });
-            Console.WriteLine($"\nTaking Item [{randoItem.Title}] the shelf now\n");
+            Console.WriteLine($"\nTaking Item [{randoItem.Title}] from the shelf now\n");
             randoItem.TakeFromShelf();
             catalog.Items.ToList().ForEach(i =>
             {
@@ -90,12 +77,11 @@ namespace SimpleLibrarySystem
             });
             Console.WriteLine("done.");
 
+
             // utilizing ICloneable
             randoItem = catalog.Items[random.Next(0, catalog.Items.Count - 1)];
-            Console.WriteLine($"\nUtlizing ICloneable and adding duplicate item [{randoItem.Title}-(id-{randoItem.Id})].");
-            var clone = randoItem.Clone() as LibraryItem;
-            clone.Id = clone.GetUniqueId();
-            catalog.AddItem(randoItem);
+            Console.WriteLine($"\n*** Utlizing ICloneable and adding duplicate item [{randoItem.Title}-(id-{randoItem.Id})]. ***");
+            var clone = randoItem.GetClone();
             catalog.AddItem(clone);
             Console.WriteLine($"\nItem [{clone.Title}(id-{clone.Id})] added and reprinting catalog\n");
             catalog.Items.ToList().ForEach(i =>
@@ -104,8 +90,19 @@ namespace SimpleLibrarySystem
             });
             Console.WriteLine("done.");
 
+            // updating an item from catalog, changing Genre.
+            Console.WriteLine($"\n*** Updating a random item's genre ***");
+            randoItem = catalog.Items.Where(i => catalog.Items.Count(j => j.Id == i.Id) < 2).FirstOrDefault();
+            PrintProperties(randoItem);
+            var sameIdClone = randoItem.Clone() as LibraryItem;
+            sameIdClone.Genre = Genre.MATH;
+            randoItem.Update(sameIdClone);
+            PrintProperties(randoItem);
+            Console.WriteLine("done.");
 
-            Console.WriteLine("\n*** Run-time Polymorphism Requirements DONE ***");
+            Console.WriteLine("\n********** Run-time Polymorphism Requirements DONE **********\n");
+
+            Console.WriteLine("\n********************** Simple Library System Program DONE **********************");
             Console.ReadLine();
         }
 
@@ -128,7 +125,6 @@ namespace SimpleLibrarySystem
             {
                 new Book(catalog)
                 {
-                    BookId = 1,
                     ISBN_Number = 9781400079988,
                     Title = "War and Peace",
                     Author = new Author() {FirstName = "Leo", LastName = "Tolstoy"},
@@ -137,7 +133,6 @@ namespace SimpleLibrarySystem
                 },
                 new Book(catalog)
                 {
-                    BookId = 2,
                     ISBN_Number = 9780743273565,
                     Title = "The Great Gasby",
                     Author = new Author() {FirstName = "F. Scott", LastName = "Fitzgerald"},
@@ -146,7 +141,6 @@ namespace SimpleLibrarySystem
                 },
                 new Book(catalog)
                 {
-                    BookId = 3,
                     ISBN_Number = 9780812550702,
                     Title = "Ender's Game",
                     Author = new Author() {FirstName = "Orson Scott", LastName = "Card"},
@@ -170,9 +164,8 @@ namespace SimpleLibrarySystem
             #region AddMoreBooks
             Console.WriteLine("\nGenerating books for catalog...");
             librarian = (Librarian)librarian;
-            librarian.AddItem(new Book(catalog)
+            librarian.AddItem(new Book(catalog) // add via librarian
             {
-                BookId = 4,
                 ISBN_Number = 9780679723165,
                 Title = "Lolita",
                 Author = new Author() { FirstName = "Vladimir", LastName = "Nabokov" },
@@ -180,9 +173,8 @@ namespace SimpleLibrarySystem
                 Location = ItemLocation.SECOND_FLOOR
             });
 
-            catalog.AddItem(new Book(catalog)
+            catalog.AddItem(new Book(catalog) // add via catalog
             {
-                BookId = 5,
                 ISBN_Number = 9780553213119,
                 Title = "Moby Dick",
                 Author = new Author() { FirstName = "Herman", LastName = "Melville" },
@@ -192,18 +184,16 @@ namespace SimpleLibrarySystem
 
             LibraryItem b1 = new Book(catalog)
             {
-                BookId = 6,
                 ISBN_Number = 9781849836883,
                 Title = "The Crusades",
                 Author = new Author() { FirstName = "Thomas", LastName = "Asbridge" },
                 Genre = Genre.HISTORY,
                 Location = ItemLocation.FIRST_FLOOR
             };
-            catalog.AddItem(b1);
+            librarian.AddItem(b1);
 
             LibraryItem eb1 = new EBook(catalog)
             {
-                BookId = 6,
                 ISBN_Number = 9781846856883,
                 Title = "Mein Kampf",
                 Author = new Author() { FirstName = "Adolf", LastName = "Hitler" },
@@ -211,10 +201,14 @@ namespace SimpleLibrarySystem
                 Location = ItemLocation.THIRD_FLOOR,
                 Edition = 4,
                 Publisher = "UNKNOWN",
-                URL = "https://ebooks.com/mein-kampf"
+                URL = "https://ebooks.com/mein-kampf",
+                HostSite = "Kindle"
             };
-            catalog.AddItem(eb1);
+            librarian.AddItem(eb1);
 
+            // add a clone
+            var clone = b1.GetClone();
+            librarian.AddItem(clone);
             #endregion
 
             // add magazines
