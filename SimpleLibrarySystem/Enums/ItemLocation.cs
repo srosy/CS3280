@@ -1,6 +1,6 @@
 ﻿namespace SimpleLibrarySystem
 {
-    public enum BookLocation
+    public enum ItemLocation
     {
         FIRST_FLOOR,
         SECOND_FLOOR,

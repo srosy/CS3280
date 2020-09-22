@@ -1,6 +1,6 @@
 ﻿namespace SimpleLibrarySystem
 {
-    public enum BookType
+    public enum Genre
     {
         SCIENCE,
         ART,
