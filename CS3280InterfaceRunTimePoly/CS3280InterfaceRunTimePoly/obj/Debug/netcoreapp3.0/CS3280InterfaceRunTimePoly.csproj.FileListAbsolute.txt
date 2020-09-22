@@ -1,0 +1,11 @@
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\bin\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.exe
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\bin\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.deps.json
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\bin\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.runtimeconfig.json
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\bin\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.runtimeconfig.dev.json
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\bin\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.dll
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\bin\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.pdb
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\obj\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.csprojAssemblyReference.cache
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\obj\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.AssemblyInfoInputs.cache
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\obj\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.AssemblyInfo.cs
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\obj\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.dll
+C:\Users\ArpitChristi\source\repos\CS3280InterfaceRunTimePoly\CS3280InterfaceRunTimePoly\obj\Debug\netcoreapp3.0\CS3280InterfaceRunTimePoly.pdb

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C58B1096-988F-4DE0-953E-7FA214D42BF7}</ProjectGuid>
+    <ProjectGuid>{01BB8897-A559-4289-9011-4DB78113BEDF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InheritanceAndPolymorphism</RootNamespace>
-    <AssemblyName>InheritanceAndPolymorphism</AssemblyName>
+    <RootNamespace>UserDefinedInterface</RootNamespace>
+    <AssemblyName>UserDefinedInterface</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,6 +47,8 @@
     <Compile Include="CommissionEmployee.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="HourlyEmployee.cs" />
+    <Compile Include="Invoice.cs" />
+    <Compile Include="IPayable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalariedEmployee.cs" />

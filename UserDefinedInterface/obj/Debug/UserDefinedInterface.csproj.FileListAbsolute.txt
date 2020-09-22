@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\UserDefinedInterface\obj\Debug\UserDefinedInterface.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\UserDefinedInterface\obj\Debug\UserDefinedInterface.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\UserDefinedInterface\bin\Debug\UserDefinedInterface.exe.config
+E:\School\Fall 2020\CS3280\CS3280\UserDefinedInterface\bin\Debug\UserDefinedInterface.exe
+E:\School\Fall 2020\CS3280\CS3280\UserDefinedInterface\bin\Debug\UserDefinedInterface.pdb
+E:\School\Fall 2020\CS3280\CS3280\UserDefinedInterface\obj\Debug\UserDefinedInterface.exe
+E:\School\Fall 2020\CS3280\CS3280\UserDefinedInterface\obj\Debug\UserDefinedInterface.pdb
