@@ -44,7 +44,7 @@ namespace SimpleLibrarySystem
 
         public decimal ChargeFee() => this.LibraryItemType == LibraryItemType.BOOK ? 1.00m : 0.50m; // ILateFee
         public virtual void Update(LibraryItem itemTo)
-        { // make sure this is actually updating the item
+        {
             if (this.GetType() != itemTo.GetType() || this.LibraryItemType != itemTo.LibraryItemType)
                 throw new ArgumentException("object types must be the same.");
 
@@ -54,7 +54,7 @@ namespace SimpleLibrarySystem
             ReturnDate = itemTo.ReturnDate;
             CheckoutDate = itemTo.CheckoutDate;
             DueDate = itemTo.DueDate;
-            Publisher =  itemTo.Publisher;
+            Publisher = itemTo.Publisher;
             Genre = itemTo.Genre;
             Location = itemTo.Location;
             DueDate = itemTo.DueDate;
