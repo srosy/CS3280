@@ -24,6 +24,7 @@ namespace SimpleLibrarySystem
                 item.DueDate = item.MaxCheckoutTime(Type);
                 Console.WriteLine($"APPROVED. {FirstName} {LastName} successfully checked out the item {item.Title}. Item is due: {item.DueDate.ToShortDateString()}.");
                 item.W_NumberCheckedOutBy = W_Number;
+                item.PersonCheckedOutBy = this;
             }
         }
     }

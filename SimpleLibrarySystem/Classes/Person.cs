@@ -10,7 +10,7 @@ namespace SimpleLibrarySystem
         public string FirstName { get; set; }
         public string LastName { get; set; }
         private readonly long SSN; // only set from constructor, aka readonly keyword
-        protected int W_Number { get; set; }
+        public int W_Number { get; set; }
         public string Type { get; set; }
         public abstract string IdString { get; }
         public decimal Fees { get; set; }
@@ -60,6 +60,7 @@ namespace SimpleLibrarySystem
             {
                 Console.WriteLine($"APPROVED. {FirstName} {LastName} checked in the item {item.Title}.");
                 item.W_NumberCheckedOutBy = 0;
+                item.PersonCheckedOutBy = null;
 
                 // charge late fee
                 if (DateTime.UtcNow > item.DueDate)

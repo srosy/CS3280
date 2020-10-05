@@ -10,99 +10,96 @@ namespace SimpleLibrarySystem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("********************** Starting Simple Library System **********************");
+            Console.WriteLine("********************** Starting Simple Library Setup **********************");
 
             var random = new Random();
             var catalog = SetupCatalog(random);
 
-            // create some students using runtime polymorphism
+            // create some students and add students to the a list
             Console.Write("\n *** Generating students ***");
-            Person p1 = new Student("Spencer", "Rosenvall", random.Next(11111111, 99999999), random.Next(11111111, 99999999));
-            Console.WriteLine("done.");
-            p1.UserInfo();
-
-            // student 1 checks out items of different types
-            Console.WriteLine($"\n*** Checking out items for {p1.FirstName} {p1.LastName} [{p1.IdString}] ***");
-            p1.CheckOutItems(catalog.Items.Take(4).ToList());
-            p1.PrintItemInfo(catalog);
-
-            // return all the remaining items
-            Console.WriteLine($"\n*** Return all library items ***");
-            p1.ReturnItems(catalog.Items.Where(i => i.IsCheckedOut).ToList());
-
-            // generate an instructor using runtime polymorphism
-            Console.WriteLine("\n *** All items are checked in.\n\nStarting Instructor Criterion ***");
-            Person instructor = new Instructor("Christi", "Arpit", random.Next(111111111, 999999999), random.Next(111111111, 999999999));
-            instructor.UserInfo();
-
-            // instructor checks-out items
-            Console.WriteLine($"\n*** Checking out items for {instructor.FirstName} {instructor.LastName} [{instructor.IdString}] ***");
-            instructor.CheckOutItems(catalog.Items.Take(6).ToList()); // try and check out all the books
-            instructor.PrintItemInfo(catalog);
-            instructor.ReturnItems(catalog.Items.Where(i => i.W_NumberCheckedOutBy == int.Parse(instructor.IdString.Substring(1))).ToList());
-
-            Console.WriteLine("\n****** Run-time Polymorphism Requirements ******\n");
-
-            // instructor turns item in late and gets fee
-            Console.WriteLine("\nInstructor returns book late and gets fee:");
-            var book = catalog.Items.First(i => !i.IsCheckedOut && i.LibraryItemType == LibraryItemType.BOOK);
-            instructor.CheckOutItem(book);
-            book.DueDate = DateTime.MinValue;
-            instructor.ReturnItem(book);
+            var persons = new List<Person>() {
+            new Student("Spencer", "Rosenvall", random.Next(11111111, 99999999), random.Next(11111111, 99999999)),
+            new Student("Gavin", "Rosenvall", random.Next(11111111, 99999999), random.Next(11111111, 99999999)),
+            new Student("Caelei", "Rosenvall", random.Next(11111111, 99999999), random.Next(11111111, 99999999)),
+            new Student("Harry", "Potter", random.Next(11111111, 99999999), random.Next(11111111, 99999999)),
+            new Student("Hermoine", "Granger", random.Next(11111111, 99999999), random.Next(11111111, 99999999)),
+            new Student("Mia", "Potter", random.Next(11111111, 99999999), random.Next(11111111, 99999999)),
+            new Student("Father", "Granger", random.Next(11111111, 99999999), random.Next(11111111, 99999999))
+            }; // list to store all person objects
             Console.WriteLine("done.");
 
-            // student turns item in late and gets fee
-            Console.WriteLine("\nStudent returns magazine late and gets fee:");
-            var magazine = catalog.Items.First(i => !i.IsCheckedOut && i.LibraryItemType == LibraryItemType.MAGAZINE);
-            p1.CheckOutItem(magazine);
-            magazine.DueDate = DateTime.MinValue;
-            p1.ReturnItem(magazine);
+            // generate instructors and add to the list
+            Console.Write("\n *** Generating instructors ***");
+            persons.Add(new Instructor("Christi", "Arpit", random.Next(111111111, 999999999), random.Next(111111111, 999999999)));
+            persons.Add(new Instructor("Nikola", "Tesla", random.Next(111111111, 999999999), random.Next(111111111, 999999999)));
+            persons.Add(new Instructor("Albert", "Einstein", random.Next(111111111, 999999999), random.Next(111111111, 999999999)));
             Console.WriteLine("done.");
 
-            // catalog is long and hard to read, so remove some items...
-            catalog.Items = catalog.Items.Take(3).ToList();
-            
-            // system take item from catalog
-            var randoItem = catalog.Items[random.Next(0, catalog.Items.Count - 1)];
-            Console.WriteLine($"\nPrint items in Catalog, remove item [{randoItem.Title}], print catalog again\n");
-            catalog.Items.ToList().ForEach(i =>
+            // check out random items for random people
+            Console.Write("\n *** Checking out items ***");
+            for (int i = 0; i < persons.Count - 1; i++)
             {
-                PrintProperties(i);
-            });
-            Console.WriteLine($"\nTaking Item [{randoItem.Title}] from the shelf now\n");
-            randoItem.TakeFromShelf();
-            catalog.Items.ToList().ForEach(i =>
+                var person = persons[i];
+                for (int j = 0; j < random.Next(1, person.Type.ToLower().Equals("student") ? catalog.MAX_CHECKED_OUT_ITEM_ALLOWED_PER_STUDENT
+                    : catalog.MAX_CHECKED_OUT_ITEM_ALLOWED_PER_INSTRUCTOR); j++)
+                {
+                    if (j == 0)
+                        person.CheckOutItem(catalog.Items.Where(item => item.LibraryItemType == LibraryItemType.BOOK).ToList()[random.Next(0, catalog.Items.Where(item => item.LibraryItemType == LibraryItemType.BOOK).Count() - 1)]);
+                    else
+                        person.CheckOutItem(catalog.Items[random.Next(0, catalog.Items.Count - 1)]);
+                }
+            }
+            Console.WriteLine("done.");
+
+            Console.WriteLine("\n********************** Simple Library System Setup DONE **********************");
+            Console.WriteLine("\n****** List and LINQ Requirements ******\n");
+
+            IEnumerable<Person> students = persons.Where(p => p.Type.ToLower() == "student");
+            Console.WriteLine($"Select a lastname for a student from these available last names " +
+                $"({string.Join(", ", students.Select(p => p.LastName).Distinct().ToList())})");
+            var lname = Console.ReadLine().ToLower();
+
+            if (students.Select(p => p.LastName.ToLower()).Contains(lname))
             {
-                PrintProperties(i);
-            });
-            Console.WriteLine("done.");
+                var student = students.FirstOrDefault(s => s.LastName.ToLower().Equals(lname));
+                var booksCheckedOutByStudent = catalog.Items.Where(b => b.LibraryItemType == LibraryItemType.BOOK && b.PersonCheckedOutBy == students.FirstOrDefault(s => s.LastName.ToLower().Equals(lname))).OrderBy(b => b.ReturnDate);
+                var query = "catalog.Items.Where(b => b.LibraryItemType == LibraryItemType.BOOK && b.PersonCheckedOutBy == students.FirstOrDefault(s => s.LastName.ToLower().Equals(lname))).OrderBy(b => b.ReturnDate);";
+                Console.WriteLine($"\nQuery to find books checked out by {student.FirstName} {student.LastName}:\n {query}");
+                Console.WriteLine($"Books checked out by {student.FirstName} {student.LastName}: {(booksCheckedOutByStudent.Count() <= 0 ? "NONE" : string.Join(", ", booksCheckedOutByStudent.Select(b => b.Title)))}");
 
+                // assuming we're using the same lastname as inputted
+                var person = persons.FirstOrDefault(s => s.LastName.ToLower().Equals(lname));
+                query = "catalog.Items.Where(b => b.PersonCheckedOutBy == persons.FirstOrDefault(s => s.LastName.ToLower().Equals(lname))).OrderBy(b => b.ReturnDate);";
+                var itemsCheckedOutByPerson = catalog.Items.Where(b => b.PersonCheckedOutBy == persons.FirstOrDefault(s => s.LastName.ToLower().Equals(lname))).OrderBy(b => b.ReturnDate);
+                Console.WriteLine($"\nQuery to find items checked out by {person.FirstName} {person.LastName}:\n {query}");
+                Console.WriteLine($"Items checked out by {person.FirstName} {person.LastName}: {(itemsCheckedOutByPerson.Count() <= 0 ? "NONE" : string.Join(", ", itemsCheckedOutByPerson.Select(i => i.Title)))}");
 
-            // utilizing ICloneable
-            randoItem = catalog.Items[random.Next(0, catalog.Items.Count - 1)];
-            Console.WriteLine($"\n*** Utlizing ICloneable and adding duplicate item [{randoItem.Title}-(id-{randoItem.Id})]. ***");
-            var clone = randoItem.GetClone();
-            catalog.AddItem(clone);
-            Console.WriteLine($"\nItem [{clone.Title}(id-{clone.Id})] added and reprinting catalog\n");
-            catalog.Items.ToList().ForEach(i =>
+                Console.WriteLine($"\n *** Notify all library users of items due tomorrow ***");
+                for (int i = 0; i < random.Next(1, catalog.Items.Count(item => item.IsCheckedOut)); i++)
+                {
+                    catalog.Items[i].DueDate = DateTime.UtcNow.AddMinutes(1439);
+                }
+
+                var itemsCheckedOutAndDueInOneDay = catalog.Items.Where(b => b.IsCheckedOut && b.DueDate < DateTime.UtcNow.AddDays(1)).ToList();
+                if (itemsCheckedOutAndDueInOneDay.Count > 0)
+                {
+                    itemsCheckedOutAndDueInOneDay.ForEach(b =>
+                    {
+                        var user = persons.FirstOrDefault(p => p.W_Number == b.W_NumberCheckedOutBy);
+                        Console.WriteLine($"\n[{user.IdString}] {user.FirstName} {user.LastName} - The due date for {b.Title} is tomorrow");
+                    });
+                }
+                else
+                {
+                    Console.WriteLine("No items due within a day");
+                }
+            }
+            else
             {
-                PrintProperties(i);
-            });
-            Console.WriteLine("done.");
+                Console.WriteLine("Invalid lastname input. Program exiting with -1");
+            }
 
-            // updating an item from catalog, changing Genre.
-            Console.WriteLine($"\n*** Updating a random item's genre ***");
-            randoItem = catalog.Items.Where(i => catalog.Items.Count(j => j.Id == i.Id) < 2).FirstOrDefault();
-            PrintProperties(randoItem);
-            var sameIdClone = randoItem.Clone() as LibraryItem;
-            sameIdClone.Genre = Genre.MATH;
-            randoItem.Update(sameIdClone);
-            PrintProperties(randoItem);
-            Console.WriteLine("done.");
-
-            Console.WriteLine("\n********** Run-time Polymorphism Requirements DONE **********\n");
-
-            Console.WriteLine("\n********************** Simple Library System Program DONE **********************");
+            Console.WriteLine("\n****** List and LINQ Requirements DONE ******\n");
             Console.ReadLine();
         }
 
@@ -158,7 +155,7 @@ namespace SimpleLibrarySystem
             Console.Write("\nGenerating Librarian...");
             Person librarian = new Librarian("Cindy-Loo", "Hoo", random.Next(11111, 99999), "123 Hoo St.", random.Next(11111, 99999));
             Console.WriteLine("done.");
-            librarian.UserInfo();
+            //librarian.UserInfo();
 
             // add books and ebooks
             #region AddMoreBooks
@@ -263,11 +260,11 @@ namespace SimpleLibrarySystem
             catalog.AddItem(j2);
             #endregion
 
-            Console.WriteLine("Print items in Catalog...");
-            catalog.Items.ToList().ForEach(i =>
-            {
-                PrintProperties(i);
-            });
+            //Console.WriteLine("Print items in Catalog...");
+            //catalog.Items.ToList().ForEach(i =>
+            //{
+            //    PrintProperties(i);
+            //});
 
             return catalog;
         }

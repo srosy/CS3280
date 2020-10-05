@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\Delegates\bin\Debug\Delegates.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Delegates\bin\Debug\Delegates.exe
+E:\School\Fall 2020\CS3280\CS3280\Delegates\bin\Debug\Delegates.pdb
+E:\School\Fall 2020\CS3280\CS3280\Delegates\obj\Debug\Delegates.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Delegates\obj\Debug\Delegates.exe
+E:\School\Fall 2020\CS3280\CS3280\Delegates\obj\Debug\Delegates.pdb

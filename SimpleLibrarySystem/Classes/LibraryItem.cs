@@ -10,6 +10,7 @@ namespace SimpleLibrarySystem
     {
         public int Id { get; set; } // ICloneable
         public int W_NumberCheckedOutBy { get; set; }
+        public Person PersonCheckedOutBy { get; set; }
 
         public Author Author { get; set; }
 
