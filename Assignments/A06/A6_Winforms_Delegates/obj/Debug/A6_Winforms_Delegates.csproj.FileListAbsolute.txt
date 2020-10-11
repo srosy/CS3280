@@ -1,0 +1,10 @@
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\bin\Debug\A6_Winforms_Delegates.exe.config
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\bin\Debug\A6_Winforms_Delegates.exe
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\bin\Debug\A6_Winforms_Delegates.pdb
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\obj\Debug\A6_Winforms_Delegates.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\obj\Debug\A6_Winforms_Delegates.Form1.resources
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\obj\Debug\A6_Winforms_Delegates.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\obj\Debug\A6_Winforms_Delegates.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\obj\Debug\A6_Winforms_Delegates.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\obj\Debug\A6_Winforms_Delegates.exe
+E:\School\Fall 2020\CS3280\CS3280\A6_Winforms_Delegates\obj\Debug\A6_Winforms_Delegates.pdb

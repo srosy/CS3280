@@ -1,0 +1,10 @@
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\bin\Debug\LMS_WinForm.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\bin\Debug\LMS_WinForm.exe
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\bin\Debug\LMS_WinForm.pdb
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\obj\Debug\SLS_WinForm.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\obj\Debug\LMS_WinForm.formSLS.resources
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\obj\Debug\LMS_WinForm.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\obj\Debug\SLS_WinForm.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\obj\Debug\SLS_WinForm.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\obj\Debug\LMS_WinForm.exe
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\LMS_WinForm\obj\Debug\LMS_WinForm.pdb
