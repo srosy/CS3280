@@ -36,6 +36,9 @@
             this.lblCloneQuantity = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.lblFormInstructions = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblLibraryItemInfo = new System.Windows.Forms.Label();
+            this.tbLibraryItemInfo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cmbItemType
@@ -50,7 +53,7 @@
             this.cmbItemType.Name = "cmbItemType";
             this.cmbItemType.Size = new System.Drawing.Size(177, 21);
             this.cmbItemType.TabIndex = 0;
-            this.cmbItemType.SelectedIndexChanged += new System.EventHandler(this.cmbItemType_SelectedIndexChanged);
+            this.cmbItemType.SelectedIndexChanged += new System.EventHandler(this.CmbItemType_SelectedIndexChanged);
             // 
             // lblItemType
             // 
@@ -101,7 +104,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(266, 415);
+            this.btnReset.Location = new System.Drawing.Point(316, 414);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 6;
@@ -120,11 +123,45 @@
             this.lblFormInstructions.Text = "Please fill out the form below.";
             this.lblFormInstructions.Visible = false;
             // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(214, 414);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 8;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // lblLibraryItemInfo
+            // 
+            this.lblLibraryItemInfo.AutoSize = true;
+            this.lblLibraryItemInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLibraryItemInfo.Location = new System.Drawing.Point(211, 467);
+            this.lblLibraryItemInfo.Name = "lblLibraryItemInfo";
+            this.lblLibraryItemInfo.Size = new System.Drawing.Size(180, 17);
+            this.lblLibraryItemInfo.TabIndex = 9;
+            this.lblLibraryItemInfo.Text = "Library Item Information";
+            // 
+            // tbLibraryItemInfo
+            // 
+            this.tbLibraryItemInfo.BackColor = System.Drawing.Color.White;
+            this.tbLibraryItemInfo.Location = new System.Drawing.Point(118, 497);
+            this.tbLibraryItemInfo.Multiline = true;
+            this.tbLibraryItemInfo.Name = "tbLibraryItemInfo";
+            this.tbLibraryItemInfo.ReadOnly = true;
+            this.tbLibraryItemInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbLibraryItemInfo.Size = new System.Drawing.Size(365, 83);
+            this.tbLibraryItemInfo.TabIndex = 10;
+            // 
             // formSLS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 450);
+            this.ClientSize = new System.Drawing.Size(605, 603);
+            this.Controls.Add(this.tbLibraryItemInfo);
+            this.Controls.Add(this.lblLibraryItemInfo);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblFormInstructions);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblCloneQuantity);
@@ -150,6 +187,9 @@
         private System.Windows.Forms.Label lblCloneQuantity;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label lblFormInstructions;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblLibraryItemInfo;
+        private System.Windows.Forms.TextBox tbLibraryItemInfo;
     }
 }
 
