@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ADO\AdoNetBasics\bin\Debug\AdoNetBasics.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ADO\AdoNetBasics\bin\Debug\AdoNetBasics.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ADO\AdoNetBasics\bin\Debug\AdoNetBasics.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ADO\AdoNetBasics\obj\Debug\AdoNetBasics.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ADO\AdoNetBasics\obj\Debug\AdoNetBasics.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ADO\AdoNetBasics\obj\Debug\AdoNetBasics.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ADO\AdoNetBasics\obj\Debug\AdoNetBasics.pdb

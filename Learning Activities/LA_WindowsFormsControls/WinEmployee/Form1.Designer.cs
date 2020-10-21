@@ -59,6 +59,8 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.tbEmployeeInfo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbDepartment = new System.Windows.Forms.ComboBox();
+            this.lblDepartment = new System.Windows.Forms.Label();
             this.gbEmployeeType.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -363,11 +365,39 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Form Submission Results";
             // 
+            // cmbDepartment
+            // 
+            this.cmbDepartment.FormattingEnabled = true;
+            this.cmbDepartment.Items.AddRange(new object[] {
+            "Utah",
+            "California",
+            "Nevada",
+            "Oregon",
+            "Washington",
+            "Colorado",
+            "New York"});
+            this.cmbDepartment.Location = new System.Drawing.Point(31, 386);
+            this.cmbDepartment.Name = "cmbDepartment";
+            this.cmbDepartment.Size = new System.Drawing.Size(121, 21);
+            this.cmbDepartment.TabIndex = 32;
+            // 
+            // lblDepartment
+            // 
+            this.lblDepartment.AutoSize = true;
+            this.lblDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDepartment.Location = new System.Drawing.Point(28, 370);
+            this.lblDepartment.Name = "lblDepartment";
+            this.lblDepartment.Size = new System.Drawing.Size(72, 13);
+            this.lblDepartment.TabIndex = 31;
+            this.lblDepartment.Text = "Department";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 403);
+            this.ClientSize = new System.Drawing.Size(803, 444);
+            this.Controls.Add(this.cmbDepartment);
+            this.Controls.Add(this.lblDepartment);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbEmployeeInfo);
             this.Controls.Add(this.btnSubmit);
@@ -438,6 +468,8 @@
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.TextBox tbEmployeeInfo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbDepartment;
+        private System.Windows.Forms.Label lblDepartment;
     }
 }
 

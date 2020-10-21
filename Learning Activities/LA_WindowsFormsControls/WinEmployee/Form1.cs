@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,6 +26,13 @@ namespace WinEmployee
             tbLastName.MouseEnter += TbLastName_MouseEnter;
             tbLastName.MouseLeave += TbLastName_MouseLeave;
             tbSSN.Leave += TbSSN_Leave;
+            #endregion
+
+            #region Data Bindings
+            var departments = Utility.GetDepartments();
+            cmbDepartment.DataSource = departments;
+            cmbDepartment.DisplayMember = departments.DeptNameColumn.ColumnName; //departments.Columns["DeptName"].ColumnName;
+            cmbDepartment.ValueMember = departments.DeptIDColumn.ColumnName;
             #endregion
         }
 
@@ -136,6 +144,8 @@ namespace WinEmployee
 
             gbEmployeeType.BackColor = OriginalGroupBoxColor;
             tbEmployeeInfo.Enabled = true;
+
+            Utility.SaveEmployee(tbFirstName.Text, tbLastName.Text, tbSSN.Text, cmbDepartment.SelectedValue.ToString(), tbSalary.Text, tbCommissionRate.Text, tbSales.Text);
         }
     }
 }
