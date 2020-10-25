@@ -33,7 +33,79 @@ namespace WinEmployee
             cmbDepartment.DataSource = departments;
             cmbDepartment.DisplayMember = departments.DeptNameColumn.ColumnName; //departments.Columns["DeptName"].ColumnName;
             cmbDepartment.ValueMember = departments.DeptIDColumn.ColumnName;
+
+            // data grid bindings
+            Context.EmployeesDataTable et = Utility.GetEmployees();
+            dgEmployee.DataSource = et;
             #endregion
+
+            #region Grid Settings
+            dgEmployee.Columns["EmployeeId"].Visible = false;
+            dgEmployee.Columns["BaseSalary"].Visible = false;
+            dgEmployee.Columns["Sales"].Visible = false;
+            dgEmployee.Columns["CommissionRate"].Visible = false;
+            dgEmployee.Columns["SSN"].ReadOnly = true;
+
+            dgEmployee.Columns.Add(new DataGridViewButtonColumn()
+            {
+                HeaderText = "Use to Delete",
+                Text = "Delete",
+                Name = "btnDelete",
+                UseColumnTextForButtonValue = true
+            });
+
+            dgEmployee.Columns.Add(new DataGridViewButtonColumn()
+            {
+                HeaderText = "Use to Edit",
+                Text = "Edit",
+                Name = "btnEdit",
+                UseColumnTextForButtonValue = true
+            });
+
+            dgEmployee.CellClick += DgEmployee_CellClick;
+            #endregion
+        }
+
+        private void RefreshGridData()
+        {
+            Context.EmployeesDataTable et = Utility.GetEmployees();
+            dgEmployee.DataSource = et;
+        }
+
+        private void DgEmployee_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var dg = (DataGridView)sender;
+
+            var rowToOperateOn = dg.Rows[e.RowIndex];
+            var currentEmpId = int.Parse(rowToOperateOn.Cells["EmployeeId"].Value.ToString());
+
+
+            if (e.ColumnIndex == -1)
+            {
+                MessageBox.Show("You selected the entire row. Current EmployeeId is: " + currentEmpId);
+                return;
+            }
+
+            // differentiate the type of cell clicked
+            if (dg.SelectedCells.Count == 1)
+            {
+                if (dg.SelectedCells[0] is DataGridViewTextBoxCell)
+                {
+                    var selectedCell = (DataGridViewTextBoxCell)dg.SelectedCells[0];
+                }
+                else if (dg.SelectedCells[0] is DataGridViewButtonCell)
+                {
+                    var selectedCell = (DataGridViewButtonCell)dg.SelectedCells[0];
+                    if (selectedCell.Value.Equals("Delete"))
+                    {
+                        MessageBox.Show("Delete clicked. Current EmployeeId is: " + currentEmpId);
+                    }
+                    else if (selectedCell.Value.Equals("Edit"))
+                    {
+                        MessageBox.Show("Edit clicked. Current EmployeeId is: " + currentEmpId);
+                    }
+                }
+            }
         }
 
         private void TbSSN_Leave(object sender, EventArgs e)
@@ -118,32 +190,15 @@ namespace WinEmployee
             lblSales.Visible = true;
             tbSales.Visible = true;
             lblCommissionRate.Visible = true;
-            tbCommissionRate.Visible = true;   
+            tbCommissionRate.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var employeeInfo = $"{tbFirstName.Text} {tbLastName.Text}\r\n" +
-                $"{tbAddr1.Text} {tbAddr2.Text}, {cmbState.SelectedItem}\r\n" +
-                $"{tbSSN.Text}\r\n";
-            
-            if (tbSalary.Visible)
-            {
-                employeeInfo += $"Salary: {tbSalary.Text}\r\n";
-            }
-            if (tbCommissionRate.Visible)
-            {
-                employeeInfo += $"Commission Rate: {tbCommissionRate.Text}\r\n";
-            }
-            if (tbSales.Visible)
-            {
-                employeeInfo += $"Sales: {tbSales.Text}\r\n";
-            }
 
-            tbEmployeeInfo.Text = employeeInfo;
+
 
             gbEmployeeType.BackColor = OriginalGroupBoxColor;
-            tbEmployeeInfo.Enabled = true;
 
             Utility.SaveEmployee(tbFirstName.Text, tbLastName.Text, tbSSN.Text, cmbDepartment.SelectedValue.ToString(), tbSalary.Text, tbCommissionRate.Text, tbSales.Text);
         }

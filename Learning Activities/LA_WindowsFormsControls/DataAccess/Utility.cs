@@ -39,5 +39,14 @@ namespace DataAccess
 
             adapter.Update(et);
         }
+
+        public static Context.EmployeesDataTable GetEmployees()
+        {
+            var et = new Context.EmployeesDataTable();
+            var adapter = new ContextTableAdapters.EmployeesTableAdapter();
+            adapter.Fill(et);
+
+            return et;
+        }
     }
 }

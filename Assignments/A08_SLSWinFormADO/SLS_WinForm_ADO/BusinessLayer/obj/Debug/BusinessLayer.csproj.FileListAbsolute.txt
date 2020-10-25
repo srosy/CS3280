@@ -1,0 +1,10 @@
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\bin\Debug\BusinessLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\bin\Debug\BusinessLayer.pdb
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\bin\Debug\DataLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\bin\Debug\DataLayer.pdb
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\bin\Debug\DataLayer.dll.config
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\obj\Debug\BusinessLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\BusinessLayer\obj\Debug\BusinessLayer.pdb
