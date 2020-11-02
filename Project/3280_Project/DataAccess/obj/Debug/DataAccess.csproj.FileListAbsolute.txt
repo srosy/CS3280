@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\DataAccess\bin\Debug\DataAccess.dll.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\DataAccess\bin\Debug\DataAccess.dll
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\DataAccess\bin\Debug\DataAccess.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\DataAccess\obj\Debug\DataAccess.dll
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\DataAccess\obj\Debug\DataAccess.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache

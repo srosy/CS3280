@@ -1,0 +1,14 @@
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\DataLayer\bin\Debug\DataLayer.dll.config
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\DataLayer\bin\Debug\DataLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\DataLayer\bin\Debug\DataLayer.pdb
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\DataLayer\obj\Debug\DataLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Assignments\A07_WinForm\DataLayer\obj\Debug\DataLayer.pdb
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\DataLayer\bin\Debug\DataLayer.dll.config
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\DataLayer\bin\Debug\DataLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\DataLayer\bin\Debug\DataLayer.pdb
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\DataLayer\obj\Debug\DataLayer.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\DataLayer\obj\Debug\DataLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\DataLayer\obj\Debug\DataLayer.pdb

@@ -1,0 +1,30 @@
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.DepartmentForm.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.EmployeeForm.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.Form1.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\bin\Debug\MDIFormAndMenu.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\bin\Debug\MDIFormAndMenu.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\bin\Debug\MDIFormAndMenu.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.pdb
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.DepartmentForm.resources
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.Form1.resources
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.exe
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.pdb
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\MDIFormAndMenu.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\MDIFormAndMenu.exe
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\MDIFormAndMenu.pdb
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\BusinessLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\DataLayer.dll
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\BusinessLayer.pdb
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\DataLayer.pdb
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\bin\Debug\DataLayer.dll.config
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.EmployeeForm.resources
+E:\School\Fall 2020\CS3280\CS3280\Project\3280_Project\MDIFormAndMenu\obj\Debug\MDIFormAndMenu.csproj.CopyComplete

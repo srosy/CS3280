@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ExceptionDemo\bin\Debug\ExceptionDemo.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ExceptionDemo\bin\Debug\ExceptionDemo.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ExceptionDemo\bin\Debug\ExceptionDemo.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ExceptionDemo\obj\Debug\ExceptionDemo.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ExceptionDemo\obj\Debug\ExceptionDemo.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ExceptionDemo\obj\Debug\ExceptionDemo.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\ExceptionDemo\obj\Debug\ExceptionDemo.pdb

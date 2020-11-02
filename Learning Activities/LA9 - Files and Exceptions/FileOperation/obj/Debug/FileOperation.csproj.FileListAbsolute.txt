@@ -1,0 +1,7 @@
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\FileOperation\bin\Debug\FileOperation.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\FileOperation\bin\Debug\FileOperation.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\FileOperation\bin\Debug\FileOperation.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\FileOperation\obj\Debug\FileOperation.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\FileOperation\obj\Debug\FileOperation.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\FileOperation\obj\Debug\FileOperation.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\FileOperation\obj\Debug\FileOperation.pdb

@@ -1,0 +1,34 @@
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\bin\Debug\WinEmployee.exe.config
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\bin\Debug\WinEmployee.exe
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\bin\Debug\WinEmployee.pdb
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\obj\Debug\WinEmployee.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\obj\Debug\WinEmployee.Form1.resources
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\obj\Debug\WinEmployee.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\obj\Debug\WinEmployee.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\obj\Debug\WinEmployee.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\obj\Debug\WinEmployee.exe
+E:\School\Fall 2020\CS3280\CS3280\WinEmployee\obj\Debug\WinEmployee.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\bin\Debug\WinEmployee.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\bin\Debug\WinEmployee.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\bin\Debug\WinEmployee.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.Form1.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LAWindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\bin\Debug\WinEmployee.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\bin\Debug\WinEmployee.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\bin\Debug\WinEmployee.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.Form1.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.Properties.Resources.resources
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.csproj.GenerateResource.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.exe
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\bin\Debug\DataAccess.dll
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\bin\Debug\DataAccess.pdb
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\bin\Debug\DataAccess.dll.config
+E:\School\Fall 2020\CS3280\CS3280\Learning Activities\LA_WindowsFormsControls\WinEmployee\obj\Debug\WinEmployee.csproj.CopyComplete
