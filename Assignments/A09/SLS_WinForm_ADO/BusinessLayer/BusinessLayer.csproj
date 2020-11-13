@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookNameEmptyException.cs" />
     <Compile Include="Models\LibraryItem.cs" />
     <Compile Include="Models\PaperBook.cs" />
     <Compile Include="Utility.cs" />

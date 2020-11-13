@@ -302,13 +302,14 @@ namespace LMS_WinForm
                     {
                         try
                         {
-                            var paperBook = GenPaperBookFromForm(); // know that it's paperback because serialize is only available to paperback book
-                            BusinessLayer.Utility.Serialize<BusinessLayer.Models.PaperBook>(paperBook, c.Text);
+                            var paperBook = GenPaperBookFromForm();
+                            BusinessLayer.Utility.Serialize(paperBook, c.Text);
                             btnSubmit.PerformClick(); // save the object
                         }
-                        catch (Exception ex)
+                        catch (BusinessLayer.BookNameEmptyException ex)
                         {
-                            throw new Exception($"{ex.Message}");
+                            tbLibraryItemInfo.Clear();
+                            tbLibraryItemInfo.Text = ex.Message;
                         }
                     }
                 }
@@ -387,29 +388,31 @@ namespace LMS_WinForm
         }
         private BusinessLayer.Models.PaperBook GenPaperBookFromForm()
         {
-            var li = new BusinessLayer.Models.PaperBook();
+            var pb = new BusinessLayer.Models.PaperBook();
             foreach (var tb in pnl.Controls.OfType<TextBox>().OrderBy(tb => tb.TabIndex))
             {
                 // use reflection to find object properties with matching names, set accordingly
                 if (!string.IsNullOrEmpty(tb.Text))
                 {
-                    var prop = li.GetType().GetProperty(tb.Name.Replace("tb", ""));
+                    var prop = pb.GetType().GetProperty(tb.Name.Replace("tb", ""));
                     if (prop != null)
                     {
                         // handle by property type
                         switch (prop.PropertyType.Name.ToLower())
                         {
                             case "int32":
-                                prop.SetValue(li, int.Parse(tb.Text), null);
+                                prop.SetValue(pb, int.Parse(tb.Text), null);
                                 break;
                             default: // string
-                                prop.SetValue(li, tb.Text, null);
+                                prop.SetValue(pb, tb.Text, null);
                                 break;
                         }
                     }
                 }
             }
-            return li;
+
+            BusinessLayer.Utility.VerifyBookTitle(pb);
+            return pb;
         }
         private void RefreshPnl()
         {

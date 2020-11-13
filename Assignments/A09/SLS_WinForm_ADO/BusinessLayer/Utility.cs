@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -8,7 +9,6 @@ namespace BusinessLayer
 {
     public static class Utility
     {
-
         /// <summary>
         /// Generic method that serializes an object.
         /// </summary>
@@ -17,11 +17,26 @@ namespace BusinessLayer
         /// <param name="filename"></param>
         public static void Serialize<T>(T obj, string filePath)
         {
-            using (var ms = File.OpenWrite(filePath))
+            try
             {
-                var formatter = new BinaryFormatter();
-                formatter.Serialize(ms, obj);
-                ms.Flush();
+                using (var ms = File.OpenWrite(filePath))
+                {
+                    var formatter = new BinaryFormatter();
+                    formatter.Serialize(ms, obj);
+                    ms.Flush();
+                }
+            }
+            catch (FileNotFoundException ex)
+            {
+                throw new Exception($"File not found. Message: {ex.Message}");
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                throw new Exception($"Security Invalid. Message: {ex.Message}");
+            }
+            catch (ArgumentNullException ex)
+            {
+                throw new Exception($"One of the arguments is null. Message: {ex.Message}");
             }
         }
 
@@ -31,14 +46,29 @@ namespace BusinessLayer
         /// <param name="filename"></param>
         public static T Deserialize<T>(string filename)
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream fs = File.Open(filename, FileMode.Open);
+            try
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                FileStream fs = File.Open(filename, FileMode.Open);
 
-            var obj = formatter.Deserialize(fs);
-            fs.Flush();
-            fs.Close();
-            fs.Dispose();
-            return (T)obj;
+                var obj = formatter.Deserialize(fs);
+                fs.Flush();
+                fs.Close();
+                fs.Dispose();
+                return (T)obj;
+            }
+            catch (FileNotFoundException ex)
+            {
+                throw new Exception($"File not found. Message: {ex.Message}");
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                throw new Exception($"Security Invalid. Message: {ex.Message}");
+            }
+            catch (ArgumentNullException ex)
+            {
+                throw new Exception($"One of the arguments is null. Message: {ex.Message}");
+            }
         }
 
         public static int SaveLibraryItem(LibraryItem li, [Optional] int cloneCount)
@@ -81,5 +111,8 @@ namespace BusinessLayer
 
             return DataLayer.Utility.SaveLibraryItem(li) ? 1 : 0;
         }
+
+        public static bool VerifyBookTitle(PaperBook book) =>
+           book is PaperBook && string.IsNullOrEmpty(book.Title) ? throw new BookNameEmptyException($"Book title cannot be empty.") : true;
     }
 }

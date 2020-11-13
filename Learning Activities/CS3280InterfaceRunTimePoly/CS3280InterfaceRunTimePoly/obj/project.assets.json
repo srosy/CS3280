@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\seros\\Downloads\\CS3280InterfaceRunTimePoly_Template\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly.csproj",
+      "projectUniqueName": "E:\\School\\Fall 2020\\CS3280\\CS3280\\Learning Activities\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly.csproj",
       "projectName": "CS3280InterfaceRunTimePoly",
-      "projectPath": "C:\\Users\\seros\\Downloads\\CS3280InterfaceRunTimePoly_Template\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly.csproj",
+      "projectPath": "E:\\School\\Fall 2020\\CS3280\\CS3280\\Learning Activities\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly.csproj",
       "packagesPath": "C:\\Users\\seros\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\seros\\Downloads\\CS3280InterfaceRunTimePoly_Template\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly\\obj\\",
+      "outputPath": "E:\\School\\Fall 2020\\CS3280\\CS3280\\Learning Activities\\CS3280InterfaceRunTimePoly\\CS3280InterfaceRunTimePoly\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
