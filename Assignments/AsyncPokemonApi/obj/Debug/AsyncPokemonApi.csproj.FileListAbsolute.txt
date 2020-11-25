@@ -1,0 +1,12 @@
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\bin\Debug\AsyncPokemonApi.exe.config
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\bin\Debug\AsyncPokemonApi.exe
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\bin\Debug\AsyncPokemonApi.pdb
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\bin\Debug\Newtonsoft.Json.dll
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\bin\Debug\RestSharp.dll
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\bin\Debug\Newtonsoft.Json.xml
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\bin\Debug\RestSharp.xml
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\obj\Debug\AsyncPokemonApi.csprojAssemblyReference.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\obj\Debug\AsyncPokemonApi.csproj.CoreCompileInputs.cache
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\obj\Debug\AsyncPokemonApi.csproj.CopyComplete
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\obj\Debug\AsyncPokemonApi.exe
+E:\School\Fall 2020\CS3280\CS3280\Assignments\AsyncPokemonApi\obj\Debug\AsyncPokemonApi.pdb

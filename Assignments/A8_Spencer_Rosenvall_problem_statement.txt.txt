@@ -1,0 +1,1 @@
+I'm attempting to solve api consumption rates using asynchronous and parallel computing.
