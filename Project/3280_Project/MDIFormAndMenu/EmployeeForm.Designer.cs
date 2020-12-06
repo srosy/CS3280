@@ -468,10 +468,12 @@
             // dtpDOB
             // 
             this.dtpDOB.Location = new System.Drawing.Point(506, 59);
+            this.dtpDOB.MaxDate = new System.DateTime(2020, 12, 1, 0, 0, 0, 0);
             this.dtpDOB.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpDOB.Name = "dtpDOB";
             this.dtpDOB.Size = new System.Drawing.Size(200, 20);
             this.dtpDOB.TabIndex = 45;
+            this.dtpDOB.Value = new System.DateTime(2020, 12, 1, 0, 0, 0, 0);
             // 
             // dtpJoinDate
             // 

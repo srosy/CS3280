@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DepartmentForm));
             this.label1 = new System.Windows.Forms.Label();
             this.lblDepartmentName = new System.Windows.Forms.Label();
             this.lblDepartmentLocation = new System.Windows.Forms.Label();
@@ -40,7 +41,11 @@
             this.lblContactPersonPhoneNumber = new System.Windows.Forms.Label();
             this.lblContactPersonName = new System.Windows.Forms.Label();
             this.tbOutput = new System.Windows.Forms.TextBox();
+            this.tbFilter = new System.Windows.Forms.TextBox();
+            this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.pbSearchIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgDepartments)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSearchIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -150,11 +155,36 @@
             this.tbOutput.Size = new System.Drawing.Size(749, 150);
             this.tbOutput.TabIndex = 48;
             // 
+            // tbFilter
+            // 
+            this.tbFilter.Location = new System.Drawing.Point(686, 19);
+            this.tbFilter.Name = "tbFilter";
+            this.tbFilter.Size = new System.Drawing.Size(90, 20);
+            this.tbFilter.TabIndex = 49;
+            // 
+            // directorySearcher1
+            // 
+            this.directorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
+            // 
+            // pbSearchIcon
+            // 
+            this.pbSearchIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbSearchIcon.Image")));
+            this.pbSearchIcon.Location = new System.Drawing.Point(658, 16);
+            this.pbSearchIcon.Name = "pbSearchIcon";
+            this.pbSearchIcon.Size = new System.Drawing.Size(22, 23);
+            this.pbSearchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSearchIcon.TabIndex = 50;
+            this.pbSearchIcon.TabStop = false;
+            // 
             // DepartmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 569);
+            this.Controls.Add(this.pbSearchIcon);
+            this.Controls.Add(this.tbFilter);
             this.Controls.Add(this.tbOutput);
             this.Controls.Add(this.tbContactPersonPhone);
             this.Controls.Add(this.tbContactPersonName);
@@ -170,6 +200,7 @@
             this.Name = "DepartmentForm";
             this.Text = "DepartmentForm";
             ((System.ComponentModel.ISupportInitialize)(this.dgDepartments)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSearchIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,5 +220,8 @@
         private System.Windows.Forms.Label lblContactPersonPhoneNumber;
         private System.Windows.Forms.Label lblContactPersonName;
         private System.Windows.Forms.TextBox tbOutput;
+        private System.Windows.Forms.TextBox tbFilter;
+        private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.Windows.Forms.PictureBox pbSearchIcon;
     }
 }

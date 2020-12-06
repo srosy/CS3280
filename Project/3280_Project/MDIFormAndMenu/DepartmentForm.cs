@@ -32,6 +32,8 @@ namespace MDIFormAndMenu
                 "Output"
             };
 
+            tbFilter.TextChanged += TbFilter_TextChanged;
+
             #region data bindings           
             dgDepartments.DataSource = Utility.GetDepartments();
             #endregion
@@ -58,6 +60,15 @@ namespace MDIFormAndMenu
             dgDepartments.CellClick += DgDepartments_CellClick;
             dgDepartments.AllowUserToAddRows = false;
             #endregion
+        }
+
+        private void TbFilter_TextChanged(object sender, EventArgs e)
+        {
+            var filter = !string.IsNullOrEmpty(tbFilter.Text) ? $"DeptName LIKE '%{tbFilter.Text}%'" +
+                                                                $"OR Location LIKE '%{tbFilter.Text}%'" +
+                                                                $"OR ContactPersonName LIKE '%{tbFilter.Text}%'" +
+                                                                $"OR ContactPersonPhone LIKE '%{tbFilter.Text}%'" : "";
+            (dgDepartments.DataSource as DataTable).DefaultView.RowFilter = filter;
         }
 
         private void PrintRow(DataGridViewRow selectedRow)
